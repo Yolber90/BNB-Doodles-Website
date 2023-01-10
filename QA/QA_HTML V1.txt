@@ -1,0 +1,144 @@
+Change Management
+**V1**
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNB Doodles</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="bnb_doodles.css">
+    
+</head>
+
+<body>
+    
+
+    <!-- START HEADER -->
+    <!-- <header>
+        <div id="header-logo"></div>
+        <div id="header-name">
+            <h1>BNB Doodles</h1>
+        </div>
+        <div id="nav-menu-div">
+            <ul id="nav-menu">
+                <li><a href="">Home</a></li>
+                <li>Browse</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </header> -->
+    <header>
+
+        <div id="header-box">
+            <div id="header-logo">
+                <img src="/media/Broke Not Broken-03 (2).jpg" alt="BNB Logo">
+            </div>
+            <div id="header-name">
+                    <h1 style="margin: auto;">BNB DOOLES</h1>
+            </div>
+        </div>
+        <div id="header-menu">
+            <ul id="nav-menu">
+                <li>
+                    <button id="nav-btn">HOME</button>
+                </li>
+                <li>
+                    <button id="nav-btn">PUPPIES</button>
+                </li>
+                <li>
+                    <button id="nav-btn">CONTACT US</button>
+                </li>
+                
+            </ul>
+
+        </div>
+
+
+    </header>
+    <!-- END HEADER -->
+
+    <div id="container">
+        <h1 style="text-align: center;">Puppies for Sale</h1>
+        <!-- !Listing -->
+        <div id="listing">
+
+            <!-- <div id="posting">
+                <img src="/media/all_puppies.jpg">
+                <div id="info"></div>
+                
+            </div>
+            <div id="posting">
+                <img src="/media/all_puppies.jpg">
+                
+
+            </div>
+
+
+
+            </div>             -->
+        </div>
+
+
+    </div>
+
+
+
+    <!-- <footer id="footer">
+        <p>adsf</p>
+
+    </footer> -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            let link = "https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json";// Calibration Link
+
+            $.get("database", function (data) {
+
+                // Variable Declerations
+                const objData = JSON.parse(data); //convert data into an obj
+                const pups = objData.puppies //short cont for for data.puppies
+                const dataLen = Object.keys(pups).length // get the obj length
+                var today = new Date();
+                var born = new Date(pups[0].DOB)
+                var daySince = today.getTime() - born.getTime()
+                var diff = daySince / (1000 * 3600 * 24);
+                var finalDiff = Math.round(diff);
+                let i = 0;
+
+
+                //For Loop, load a id 'posting' for each puppy
+                for (i; i < dataLen; i++) {
+                    // append a div with id #posting under div with id #listing
+                    $("#listing").append(
+                        "<div id='posting' class= img" + [i] + "></div>"
+                    )
+                    //Add image to #listing
+                    $(".img" + [i]).append(
+                        pups[i].thumbnail
+                    )
+                    $(".img" + [i]).append(
+                        "<div id='info' class=info" + [i] + ">" +
+                        "<ul id=ul-list" + [i] + "></ul>" + "</div>"
+                    )
+                    $("#ul-list" + [i]).append(
+                        "<li class='ident-name'><strong>" + pups[i].name + "</strong></li>" +
+                        "<li id='ident'>Coat: " + pups[i].coat + "</li>" +
+                        "<li id='ident'>DOB:  " + pups[i].DOB + "-" + "<br>" + finalDiff + " Days Old</li>"
+                    )
+                    $(".img" + [i]).click(function () {
+                        window.open("https://www.google.com")
+                    });
+                };
+            })
+
+        });
+
+    </script>
+</body>
+
+</html>

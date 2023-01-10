@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Jquery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/stylesheets/contact_us.css">
+    <!-- Javascript -->
+    <script src="/javascript/javascript.js"></script>
+
+    <title>BNB Doodles | Contact Us</title>
+
+
+</head>
+
+<body>
+    <header>
+        <div id="header-box">
+
+            <div id="header-logo">
+                <a href="/home.html">
+                    <img id="logo-img" src="/media/Broke Not Broken-03 (2).jpg" alt="BNB Logo">
+                </a>
+            </div>
+            <div id="header-name">
+                <h1 style="margin: auto;">BNB DOOLES</h1>
+            </div>
+            <button id="hmbrgr-menu-btn" class="material-symbols-outlined">MENU</button>
+        </div>
+        <div id="header-menu">
+            <ul id="nav-menu">
+                <li>
+                    <a href="/home.html">
+                        <button id="nav-btn">HOME</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/puppies.html">
+                        <button id="nav-btn">PUPPIES</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/contact_us.html">
+                        <button id="nav-btn">CONTACT US</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="new-mobile-menu">
+        <a href="/home.html">Home</a>
+        <hr>
+        <a href="/puppies.html">Puppies</a>
+        <hr>
+        <a href="/contact_us.html">Contact Us</a>
+        <hr>
+    </div>
+    </div>
+
+
+
+    <div id="container">
+        <div id="contact-us-container">
+            <h1 class="cu-header">Contact Us</h1>
+            <hr>
+            <h4 class="cu-sub-head">For all inquires, please use the form below</h4>
+            <h4 class="cu-sub-head">We'll get back to you as soon as possible</h4>
+
+
+            <form target="_blank" action="https://formsubmit.co/yolber19@gmail.com" method="POST">
+                <!-- <form target="_blank" action="https://formsubmit.co/yolber19@gmail.com" method="POST"></form> -->
+                <div class="form-input">
+                    <!-- Top Input Fields, Name, Email, Subject -->
+                    <p class="input-head">Name</p>
+                    <input type="text" name="name" required>
+                    <p class="input-head">Email</p>
+                    <input type="email" name="email" required>
+                    <p class="input-head">Subject</p>
+                    <input type="subject" name="_subject" value="Questions about your puppies">
+
+                    <!-- Hidden Fields -->
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_autoresponse"
+                        value="Thank you for your email, we'll get back to you as soon as possible">
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Once we have a domain, enter the domain name for a re-direct automatic link -->
+                    <input type="hidden" name="_next" value="http://www.google.com">
+                </div>
+                <!-- Text Area -->
+                <div class="form-input">
+                    <p class="input-head">Your Message</p>
+                    <textarea placeholder="Your Message" name="message" rows="10" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+    </div>
+</body>
+
+</html>
