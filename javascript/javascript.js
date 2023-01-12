@@ -8,10 +8,13 @@ $(document).ready(function () {
 
         if(hamburgerMenu == true){
             $(".material-symbols-outlined").html("menu");
-            
             $(".new-mobile-menu").animate({
                 "width": '0%',
                 "height": "0%"
+            });
+            $('body').css({
+                overflow: 'auto',
+                // height: 'auto'
             });
             
         }else{
@@ -20,11 +23,19 @@ $(document).ready(function () {
             $(".new-mobile-menu").animate({
                 "width": '70%',
                 "height": "100%" 
-            });            
+            });
+            $('body').css({
+                overflow: 'hidden',
+                // height: '100%'   
+            });
         }
 
 
     });
+    $("#hmbrgr-menu-btn").click(function(){
+
+    })
+
 })
 
 

@@ -172,36 +172,15 @@ img {
 
 
 /* *Start Body */
-#footer, #container{
+#container{
     width: 60%;
 }
 #container {
-    
     height: auto;
     background-color: rgb(227, 241, 241);
     margin: auto;
     display: flex;
     flex-direction: column;
-}
-
-#footer{
-    height: 150px;
-    background-color: lightgray;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-#social-media{
-    width: 90%;
-    height: 80%;
-    margin: auto;
-}
-.instagram{
-    width: auto;
-    height: 40px;
-    filter: opacity(.5);
-    
 }
 
 #details {
@@ -237,8 +216,6 @@ img {
 
 table {
     width: 550px;
-
-
 }
 
 th {
@@ -440,26 +417,6 @@ td {
         
     }
 
-    #footer{
-        width: 100%;
-        height: 150px;
-        background-color: lightgray;
-        margin: 0px auto;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    
-    #social-media{
-        width: 90%;
-        height: 80%;
-        margin: auto;
-    }
-    .instagram{
-        width: auto;
-        height: 40px;
-        filter: opacity(.5);
-    }
     #notice{
         margin: auto;
     }
@@ -538,26 +495,7 @@ td {
         font-family: 'Varela Round', sans-serif;
 
     }
-    #footer{
-        width: 100%;
-        height: 150px;
-        background-color: lightgray;
-        margin: 0px auto;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    
-    #social-media{
-        width: 90%;
-        height: 80%;
-        margin: auto;
-    }
-    .instagram{
-        width: auto;
-        height: 40px;
-        filter: opacity(.5);
-    }
+
     #notice{
         margin: auto;
     }

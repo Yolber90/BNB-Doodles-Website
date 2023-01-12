@@ -197,12 +197,31 @@ li{
     overflow: hidden;
 }
 
+/* *Reach Us */
+#reach-us{
+    width: auto;
+    height: 100%;
+    margin: auto;
+}
+#reach-us > i{
+    text-align: center;
+    margin: auto;
+    
+}
+#reach-us > a{
+    text-decoration: none;
+    
+}
+
 #footer{
+    padding-top: 10px;
     width: 80%;
-    height: 250px;
+    height: 100px;
     background-color: lightgray;
     margin: auto;
 }
+/* *Reach Us */
+
 
 
 /* !  */
@@ -285,57 +304,7 @@ li{
     .cu-sub-head{
         font-size:12px ;
     }
-/* 
-    .mobile-menu {
-        height: 100%;
-        width: 100%;
-        background-color: rgba(65, 75, 82, 0.8);
-        z-index: 999;
-        position: absolute;
-        margin-top: 70px;
-        display: flex;
-        flex-direction: column;
-    } */
 
-
-    /* .mobile-menu-container {
-        height: 80%;
-        width: 90%;
-        margin: 25px auto;
-        background-color: rgba(173, 216, 230, 0.753);
-        display: flex;
-        flex-direction: column;
-        border-radius: 10px;
-
-    } */
-
-    /* .mobile-menu-button {
-        width: 80%;
-        margin: 15px auto 15px;
-        border: 1px solid black;
-        border-radius: 5px;
-
-    } */
-    /* form{
-        width: 100%;
-        margin:  auto;
-        display: flex;
-        flex-direction: column;
-    } */
-
-    /* .mobile-menu-button {
-        width: 80%;
-        margin: 30px auto 30px auto;
-        border: 1px solid black;
-        border-radius: 5px;
-        font-family: 'Varela Round', sans-serif;
-        font-size: 20px;
-        border: none;
-        background-color: rgba(173, 216, 230, 0);
-    } */
-    /* hr{
-        width: 80%;
-    } */
     #contact-us-container{
         width: 90%;
         display: flex;
@@ -370,6 +339,14 @@ li{
         width: 40%;
         margin-left: 10px;
         
+    }
+    #reach-us{
+        width: auto;
+        margin: auto;
+    }
+    i{
+        font-size: 12px;
+        margin: auto;
     }
 
     
@@ -423,5 +400,17 @@ li{
         flex-direction: column;
         margin: auto;
     }
+
+    /** Reach Us */
+    #reach-us{
+        width: 100%;
+        margin-top: 40px;
+        margin: auto;
+    }
+    i{
+        width: 100%;
+        font-size: 16px;
+    }
+    /** Reach Us */
 
 }

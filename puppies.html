@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Jquery Library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ab9a9d34df.js" crossorigin="anonymous"></script>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/stylesheets/puppies.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
     <!-- Javascript -->
     <script src="/javascript/javascript.js" defer></script>
 
@@ -19,6 +22,7 @@
 <body>
 
     <header>
+
         <div id="header-box">
             <div id="header-logo">
                 <a href="/home.html">
@@ -51,41 +55,53 @@
                     </a>
                 </li>
             </ul>
+            
 
         </div>
+
     </header>
+    <div class="new-mobile-menu">
+        <a href="/home.html">Home</a>
+        <hr>
+        <a href="/puppies.html">Puppies</a>
+        <hr>
+        <a href="/contact_us.html">Contact Us</a>
+        <hr>
+    </div>
     <!-- END HEADER -->
 
     <div id="container">
-        <div class="new-mobile-menu">
-            <a href="/home.html">Home</a>
-            <hr>
-            <a href="/puppies.html">Puppies</a>
-            <hr>
-            <a href="/contact_us.html">Contact Us</a>
-            <hr>
-        </div>
         <h1 id="container-header">Doodles for Sale
             <hr id="header-hr">
         </h1>
         <!-- !Listing - Loaded with jquery-->
         <div id="listing"></div>
     </div>
+    
     <div id="footer">
-        <div id="social-media">
-            <a target="_blank" href="https://www.instagram.com/brokenotbroken2022/?igshid=Zjc2ZTc4Nzk%3D">
-                <img class="instagram" src="/media/instagram.png" alt="instagram">
-            </a>
+        <div id="reach-us">
+            <img id="footer-img" src="/media/Broke Not Broken-03 (2).jpg" alt="" srcset="">
+            <br>
+            <hr>
+            <a href="tel:123-456-7890"><i class="fa-solid fa-phone">&nbsp;&nbsp;&nbsp;&nbsp;(123) 456-7890</i></a>
+            <br>
+            <i class="fa-solid fa-clock">&nbsp;&nbsp;&nbsp;&nbsp;Mon-Fri (8Am - 6PM)</i>
+            <br>
+            <a target="_blank" href="https://www.instagram.com/brokenotbroken2022/?igshid=Zjc2ZTc4Nzk%3D"><i class="fa-brands fa-instagram">&nbsp;&nbsp;&nbsp;&nbsp;Follow Us</i></a>
+            <br>
+            <i class="fa-solid fa-location-dot">&nbsp;&nbsp;&nbsp;&nbsp;Longwood, FL</i>
+        </div>
+        <div id="co-info">
+            <p>BROKE NOT BROKEN LLC</p>
         </div>
     </div>
+    
 
 
 
 
     <script type="text/javascript">
         $(document).ready(function () {
-
-            let testLink = "https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json";// Calibration Link
 
             $.get("/json/database", function (data) {
 
