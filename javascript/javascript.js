@@ -15,10 +15,10 @@ $(document).ready(function () {
                 "width": "0%",
                 "height": "0%"
             });
-            $('body').css({
-                overflow: 'auto',
-                // height: 'auto'
-            });
+            // $('body').css({
+            //     overflow: 'auto',
+            //     // height: 'auto'
+            // });
             
         }else{
             $("#hmbrgr-menu-btn").html(
@@ -29,10 +29,10 @@ $(document).ready(function () {
                 "width": '70%',
                 "height": "100%" 
             });
-            $('body').css({
-                overflow: 'hidden',
-                height: '100%'   
-            });
+            // $('body').css({
+            //     overflow: 'hidden',
+            //     height: '100%'   
+            // });
         }
         // reset mobile menu (hamburger menu) once clicked.
         $(".m-home, .m-puppies, .m-contact-us").on("click", function () {
@@ -45,10 +45,10 @@ $(document).ready(function () {
                 "width": "0%",
                 "height": "0%"
             });
-            $('body').css({
-                overflow: 'auto',
-                height: 'auto'
-            });
+            // $('body').css({
+            //     overflow: 'auto',
+            //     height: 'auto'
+            // });
         });
     });
     // END Hamburger Menu
