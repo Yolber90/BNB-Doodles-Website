@@ -6,7 +6,7 @@
       "sex": "male",
       "coat": "White",
       "DOB": "05/21/2016",
-      "thumbnail": "<img id='list-img' src='/media/kai2.jpg'>",
+      "thumbnail": "<img id='list-img' src='/media/kai2.JPG'>",
       "available": false,
       "price": 1200
     },
