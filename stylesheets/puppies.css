@@ -169,9 +169,7 @@ li{
     }
 
 
-    #header-menu {
-        display: none;
-    }   
+
     #container-header{
         text-align: center;
         font-size: 29px;
@@ -198,8 +196,8 @@ li{
     }
     
     #posting{
-        width: 70%;
-        height: 200x;
+        width: 80%;
+        height: auto;
         background-color: rgb(122, 122, 122);
         margin: 15px auto 15px auto;
         display: flex;
