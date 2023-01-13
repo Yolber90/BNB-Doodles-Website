@@ -40,6 +40,7 @@ $(document).ready(function () {
             $("#hmbrgr-menu-btn").html(
                 "<i class='fa-solid fa-bars'></i>"
             );
+            
             $(".new-mobile-menu").animate({
                 "width": "0%",
                 "height": "0%"
