@@ -58,12 +58,12 @@
 
     #reach-us > a, i{
         font-size: 13px;
+        margin: auto;
     }
     #co-info{
         font-size: 10px;
         margin-bottom: 0px;
     }
-
 
 }
 
