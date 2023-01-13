@@ -9,7 +9,7 @@ $(document).ready(function () {
         if(hamburgerMenu == true){
             $(".material-symbols-outlined").html("menu");
             $(".new-mobile-menu").animate({
-                "width": '0%',
+                "width": "0%",
                 "height": "0%"
             });
             $('body').css({
@@ -21,12 +21,12 @@ $(document).ready(function () {
             $(".material-symbols-outlined").html("close");
             
             $(".new-mobile-menu").animate({
-                "width": '70%',
+                // "width": '100%',
                 "height": "100%" 
             });
             $('body').css({
                 overflow: 'hidden',
-                // height: '100%'   
+                height: '100%'   
             });
         }
 
