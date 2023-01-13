@@ -34,6 +34,16 @@ $(document).ready(function () {
                 height: '100%'   
             });
         }
+        $(".m-home, .m-puppies, .m-contact-us").on("click", function () {
+            hamburgerMenu = true;
+            $("#hmbrgr-menu-btn").html(
+                "<i class='fa-solid fa-bars'></i>"
+            );
+            $(".new-mobile-menu").animate({
+                "width": "0%",
+                "height": "0%"
+            });
+        });
     });
     // END Hamburger Menu
 

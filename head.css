@@ -143,30 +143,32 @@ header {
         font-size: 25px;
     }
     .new-mobile-menu{
-        background-color: rgba(91, 95, 95, 0.904);
+        background-color: lightblue;
         padding-top: 60px;
         width: 0px;
         overflow: hidden;
-        position: fixed;
+        position:fixed;
         display: flex;
         flex-direction: column;
         overflow: hidden;
         border-right:0px solid black;
+        z-index: 99;
     }
     
     .new-mobile-menu > a{
         font-size: 20px;
         text-decoration: none;
-        color: aliceblue;
+        color: rgb(66, 67, 68);
         margin-top: 40px;
         margin-left: 10px;
         margin-bottom: 10px;
+        font-weight: 700;
         position:static;        
     }
     .new-mobile-menu > hr{
         border: 1px solid rgb(54, 53, 53);
         border-radius: 5px;
-        width: 40%;
+        width: 70%;
         margin-left: 10px;
         
     }
