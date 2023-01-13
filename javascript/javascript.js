@@ -44,6 +44,10 @@ $(document).ready(function () {
                 "width": "0%",
                 "height": "0%"
             });
+            $('body').css({
+                overflow: 'auto',
+                // height: 'auto'
+            });
         });
     });
     // END Hamburger Menu
