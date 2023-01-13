@@ -151,8 +151,7 @@ header {
         display: flex;
         flex-direction: column;
         overflow: hidden;
-        border-right:0px solid black ;
-        z-index: 0;
+        border-right:0px solid black;
     }
     
     .new-mobile-menu > a{
