@@ -169,7 +169,7 @@ li{
     font-size: 42px;
     font-family: 'Varela Round', sans-serif;
     color: white;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.548), -2px -2px 1px rgba(0, 0, 0, 0.397);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.548);
 }
 
 #listing{
@@ -364,7 +364,7 @@ li{
     }
 
     .new-mobile-menu{
-        background-color: rgba(91, 95, 95, 0.904);
+        background-color: lightblue;
         padding-top: 40px;
         width: 0px;
         overflow: hidden;
@@ -389,9 +389,8 @@ li{
     .new-mobile-menu > hr{
         border: 1px solid rgb(54, 53, 53);
         border-radius: 5px;
-        width: 40%;
+        width: 100%;
         margin-left: 10px;
-        
     }
     /* #contact-us-container{
         width: 90%;

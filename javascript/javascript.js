@@ -21,7 +21,7 @@ $(document).ready(function () {
             $(".material-symbols-outlined").html("close");
             
             $(".new-mobile-menu").animate({
-                // "width": '100%',
+                "width": '70%',
                 "height": "100%" 
             });
             $('body').css({
