@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.new-mobile-menu{
+    display: none;
+}
+.mobile-menu-container {
+    display: none;
+}
+header {
+    width: 100%;
+    height: 120px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#header-box {
+    width: 30%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#header-logo {
+    height: 90px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: visible;
+    margin: auto;
+}
+#logo {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 5px;
+}
+
+#header-name{
+    height: auto;
+    width: auto;
+    margin: auto;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    color: white;
+    text-shadow: 3px 3px 2px rgba(31, 31, 163, 0.384), -3px -3px 1px rgba(31, 31, 163, 0.384);    
+}
+#co-name{
+    margin: auto;
+}
+
+#header-menu {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+#buttons{
+    margin: auto;
+    width: auto;
+}
+
+#nav-btn {
+    border-radius: 6px;
+    border: solid 0px black;
+    font-size: 18px;
+    margin: auto 10px auto 10px;
+    background-color: lightblue;
+    width: auto;
+}
+
+
+#nav-btn:hover {
+    background-color: rgb(220, 220, 236);
+    cursor: pointer;
+}
+
+#hmbrgr-menu-btn{
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    header {
+    height: 70px;
+    position: fixed;
+    z-index: 99999;
+    }
+
+    #header-box {
+        width: 100%;
+        height: 100px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #header-name {
+        display: none;
+    }
+
+    #header-logo {
+        height: auto;
+        width: 70px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        overflow: visible;
+        margin: 15px auto auto 15px;
+
+    }
+
+    #nav-btn {
+        border-radius: 6px;
+        border: solid 0px black;
+        font-size: 12px;
+        margin-bottom: 3px;
+        background-color: lightblue;
+        width: auto;
+        display: none;
+    }
+    #hmbrgr-menu-btn{
+        display: block;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+    }
+    #hmbrgr-menu-btn > i{
+        font-size: 25px;
+    }
+
+}
+
+
+@media screen and (max-width: 1650px) and (min-width: 601px) {
+    header {
+        width: 100%;
+    }
+
+    #header-box {
+        width: 100%;
+        height: 100px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #header-logo {
+        height: auto;
+        width: 90px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        overflow: visible;
+        margin-right: 0px;
+    }
+
+    #header-name {
+        font-size: 30px;
+        margin-top: 15px;
+        margin-left: 10px;
+        color: black;
+        font-family: 'Varela Round', sans-serif;
+    }
+
+    #hmbrgr-menu-btn{
+        display: none;
+    }
+
+}
