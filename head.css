@@ -22,6 +22,7 @@ header {
     display: flex;
     flex-direction: column;
     position: relative;
+    z-index: 999;
 }
 
 #header-box {
@@ -140,6 +141,35 @@ header {
     }
     #hmbrgr-menu-btn > i{
         font-size: 25px;
+    }
+    .new-mobile-menu{
+        background-color: rgba(91, 95, 95, 0.904);
+        padding-top: 60px;
+        width: 0px;
+        overflow: hidden;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border-right:0px solid black ;
+        z-index: 0;
+    }
+    
+    .new-mobile-menu > a{
+        font-size: 20px;
+        text-decoration: none;
+        color: aliceblue;
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        position:static;        
+    }
+    .new-mobile-menu > hr{
+        border: 1px solid rgb(54, 53, 53);
+        border-radius: 5px;
+        width: 40%;
+        margin-left: 10px;
+        
     }
 
 }

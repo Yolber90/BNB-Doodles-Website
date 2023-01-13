@@ -6,9 +6,9 @@
     font-weight: 100 700;
     src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v75/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2) format('woff2');
 }
-.new-mobile-menu{
+/* .new-mobile-menu{
     display: none;
-}
+} */
 
 body{
     background-color: #F8F6F3;
@@ -363,7 +363,7 @@ li{
         position: relative;/*In order to allow a div over an image, this div needs a position of relative and the dvi a position of absolute (See #info)  */
     }
 
-    .new-mobile-menu{
+    /* .new-mobile-menu{
         background-color: lightblue;
         padding-top: 40px;
         width: 0px;
@@ -391,7 +391,7 @@ li{
         border-radius: 5px;
         width: 100%;
         margin-left: 10px;
-    }
+    } */
     /* #contact-us-container{
         width: 90%;
         display: flex;

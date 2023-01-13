@@ -381,7 +381,7 @@ td {
         /* display: none; ! Maybe use this option when mobile menu drops*/
 
     }
-    .new-mobile-menu{
+    /* .new-mobile-menu{
         background-color: rgba(91, 95, 95, 0.904);
         padding-top: 40px;
         width: 0px;
@@ -409,7 +409,7 @@ td {
         width: 40%;
         margin-left: 10px;
         
-    }
+    } */
 
     #notice{
         margin: auto;

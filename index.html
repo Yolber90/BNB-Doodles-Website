@@ -45,17 +45,37 @@
                     <button id="nav-btn" class="contact-us">CONTACT US</button>
                 </div>
             </div>
+            <div class="new-mobile-menu">
+                <a class="m-home">Home</a>
+                <hr>
+                <a class="m-puppies">Puppies</a>
+                <hr>
+                <a class="m-contact-us">Contact Us</a>
+                <hr>
+            </div>
         </header>
+
         <div id="index">
+
 
         </div>
     
     <script>
         $(document).ready(function () {
+            // desktop menu
             $(".puppies").on("click", function () {
                 $("#index").load("puppies.html");
             });
             $(".contact-us").on("click", function () {
+                $("#index").load("contact_us.html");
+            });
+
+
+            // mobile menu
+            $(".m-puppies").on("click", function () {
+                $("#index").load("puppies.html");
+            });
+            $(".m-contact-us").on("click", function () {
                 $("#index").load("contact_us.html");
             });
         });

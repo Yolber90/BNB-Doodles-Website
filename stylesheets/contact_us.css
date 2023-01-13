@@ -7,9 +7,9 @@
     src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v75/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2) format('woff2');
 }
 /* !Contact Us */
-.new-mobile-menu{
+/* .new-mobile-menu{
     display: none;
-}
+} */
 .cu-header, .cu-sub-head{
     font-family: 'Varela Round', sans-serif;
     margin: auto;
@@ -143,7 +143,7 @@ li{
     cursor: pointer;
 }
 
-.material-symbols-outlined {
+/* .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
         'wght' 400,
@@ -170,14 +170,14 @@ li{
     cursor: pointer;
     display: none;
     -webkit-font-smoothing: antialiased;
-}
+} */
 /* *END    Header */ 
 
 /* *Start Body */
 
-.mobile-menu-container {
+/* .mobile-menu-container {
     display: none;
-}
+} */
 
 #container{
     width: 60%;
@@ -274,7 +274,7 @@ li{
         display: none;
     }
 
-    .material-symbols-outlined {
+    /* .material-symbols-outlined {
         font-family: 'Material Symbols Outlined';
         font-weight: normal;
         font-style: normal;
@@ -293,7 +293,7 @@ li{
         margin: auto 0px auto auto;
         -webkit-font-smoothing: antialiased;
 
-    }
+    } */
 
     #header-menu {
         display: none;
@@ -311,7 +311,7 @@ li{
         flex-direction: column;
         margin: 35px auto;
     }
-    .new-mobile-menu{
+    /* .new-mobile-menu{
         background-color: rgba(91, 95, 95, 0.904);
         padding-top: 60px;
         width: 0px;
@@ -339,7 +339,7 @@ li{
         width: 40%;
         margin-left: 10px;
         
-    }
+    } */
     #reach-us{
         width: auto;
         margin: auto;
