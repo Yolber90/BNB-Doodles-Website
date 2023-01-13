@@ -42,7 +42,7 @@
       "coat": "Brown",
       "sex": "female",
       "DOB": "01/01/2023",
-      "thumbnail": "<img id='list-img' src='/media/husky.jpg'>",
+      "thumbnail": "<img id='list-img' src='/media/husky.JPG'>",
       "available": true,
       "price": 1200
     }
