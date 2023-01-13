@@ -34,6 +34,7 @@ $(document).ready(function () {
                 height: '100%'   
             });
         }
+        // reset mobile menu (hamburger menu) once clicked.
         $(".m-home, .m-puppies, .m-contact-us").on("click", function () {
             hamburgerMenu = true;
             $("#hmbrgr-menu-btn").html(
