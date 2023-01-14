@@ -5,12 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="home.css">
 </head>
-<body style="background-color: lightblue;">
-
-    <div>
-        <h1 style="position: absolute; top: 50%; left: 12%; font-family: 'Varela Round', sans-serif;font-size: 32px; margin: 0px;">BNB DOODLES</h1>
+<body>
+    <div id="home-container">
+        <img src="/media/buelo.jpg" alt="" srcset="">
+        <h1 id="home-title">BNB Doodles</h1>
     </div>
+    <script>
+        $(document).ready(function () {
+            $( "#home-title" ).slideUp( 300 ).delay( 800 ).fadeIn( 1000 );
+        });
+    </script>
     
 </body>
 </html>
