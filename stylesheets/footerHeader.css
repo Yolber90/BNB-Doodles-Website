@@ -147,7 +147,7 @@ header {
         background-color: lightblue;
         padding-top: 60px;
         width: 0px;
-        overflow: hidden;
+        overflow: scroll;
         position:fixed;
         display: flex;
         flex-direction: column;
