@@ -33,6 +33,12 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    #home-container>img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin-top: 70px;
+    }
 } 
 
 
