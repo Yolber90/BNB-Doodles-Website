@@ -73,9 +73,11 @@
                 })
                 $(".puppies").on("click", function () {
                     $("#index").load("puppies.html");
+                    $("#pups").css("display", "none")
                 });
                 $(".contact-us").on("click", function () {
                     $("#index").load("contact_us.html");
+                    $("#pups").css("display", "none")
                 });
 
                 // mobile menu
@@ -85,18 +87,16 @@
                 });
                 $(".m-puppies").on("click", function () {
                     $("#index").load("puppies.html");
+                    $("#pups").css("display", "none")
                 });
                 $(".m-contact-us").on("click", function () {
                     $("#index").load("contact_us.html");
+                    $("#pups").css("display", "none")
                 });
                 $(".m-sample").on("click", function () {
                     $("#index").load("puppy_details_kai.html");
+                    $("#pups").css("display", "none")
                 });
-                $(window).scroll(function () {
-                    $("pups").css("display","")
-
-                });
-
             })
         </script>
     </body>
