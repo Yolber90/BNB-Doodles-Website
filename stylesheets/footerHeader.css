@@ -214,20 +214,6 @@ header {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FOOTER */
 #footer{
     width: 100%;
@@ -307,6 +293,13 @@ header {
         
     }
 }
+
+@media screen and (max-width: 1731px) and (min-width: 1651px) {
+    #header-name{
+        font-size: 27px;
+    }
+}
+
 
 
 
