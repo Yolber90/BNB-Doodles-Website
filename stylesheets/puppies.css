@@ -7,9 +7,7 @@ body{
     background-color: #F8F6F3;
     display: flex;
     flex-direction: column;
-    margin: 0px;
-   
-    
+    margin: 0px;    
 }
 
 /* *Header */
@@ -141,6 +139,9 @@ hr{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
 }
+.hideme{
+    opacity:0;
+}
 
 
 /* ! RESPONSIVE CSS  */
@@ -168,7 +169,7 @@ hr{
     }
 
     #container {
-        min-width: 95%;
+        min-width: 100%;
         height: auto;
         background-color: rgb(227, 241, 241);
         margin: 42px auto;
@@ -197,6 +198,7 @@ hr{
         border-radius: 5px;
         position: relative;/*In order to allow a div over an image, this div needs a position of relative and the dvi a position of absolute (See #info)  */
     }
+    
 
 
 }
@@ -285,13 +287,6 @@ hr{
         font-family: 'Varela Round', sans-serif;
 
     }
-    /* #contact-us-container{
-        height: auto;
-        width: 45%;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-    } */
 
 }
 

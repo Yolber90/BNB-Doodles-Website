@@ -21,6 +21,7 @@
 </head>
 
 <body>
+
     <body>
         <header>
             <div id="header-box">
@@ -55,16 +56,21 @@
             <hr>
             <a class="m-sample">puppy page sample</a>
         </div>
-        <div id="index">
-            <p>HELLO2</p>
-        </div>
+
+
+        <div id="index"></div><!--Load jquery here-->
+        <div id="pups"></div><!--If home screen, load puppies here-->
 
 
         <script>
             $(document).ready(function () {
-
                 $("#index").load("home.html")
+                $("#pups").load("puppies.html")
                 // desktop menu
+                $(".home").on("click", function () {
+                    $("#index").load("home.html")
+                    $("#pups").load("puppies.html")
+                })
                 $(".puppies").on("click", function () {
                     $("#index").load("puppies.html");
                 });
@@ -75,6 +81,7 @@
                 // mobile menu
                 $(".m-home").on("click", function () {
                     $("#index").load("home.html");
+                    $("#pups").load("puppies.html");
                 });
                 $(".m-puppies").on("click", function () {
                     $("#index").load("puppies.html");
@@ -85,8 +92,12 @@
                 $(".m-sample").on("click", function () {
                     $("#index").load("puppy_details_kai.html");
                 });
+                $(window).scroll(function () {
+                    $("pups").css("display","")
 
-            });
+                });
+
+            })
         </script>
     </body>
 
