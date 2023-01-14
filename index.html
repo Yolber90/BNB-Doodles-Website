@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +9,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/ab9a9d34df.js" crossorigin="anonymous"></script>
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="/stylesheets/puppy_details.css"> -->
+
+    
     <link rel="stylesheet" href="head.css">
     <link rel="stylesheet" href="/stylesheets/lightslider.css">
+    <link rel="stylesheet" href="/stylesheets/puppy_details.css">
     <link rel="stylesheet" href="/stylesheets/footer.css">
-    <!-- Javascript -->
+
     <script src="/javascript/lightslider.js" defer></script>
     <script src="/javascript/javascript.js" defer></script>
 
     <title></title>
 </head>
+
 <body>
+
     <body>
         <header>
             <div id="header-box">
@@ -35,9 +38,8 @@
                 <button id="hmbrgr-menu-btn">
                     <i class="fa-solid fa-bars"></i>
                 </button>
-                
             </div>
-    
+
             <div id="header-menu">
                 <div id="buttons">
                     <button id="nav-btn" class="home">HOME</button>
@@ -45,45 +47,50 @@
                     <button id="nav-btn" class="contact-us">CONTACT US</button>
                 </div>
             </div>
-            
+
         </header>
         <div class="new-mobile-menu">
-            <a class="m-home">Home</a>
-            <hr>
+            <!-- <a class="m-home">Home</a>
+            <hr> -->
             <a class="m-puppies">Puppies</a>
             <hr>
             <a class="m-contact-us">Contact Us</a>
             <hr>
+            <a class="m-sample">puppy page sample</a>
         </div>
         <div id="index">
             <p>HELLO2</p>
-
-
         </div>
-    
-    <script>
-        $(document).ready(function () {
-            $("#index").load("home.html")
-            
-            // desktop menu
-            $(".puppies").on("click", function () {
-                $("#index").load("puppies.html");
-            });
-            $(".contact-us").on("click", function () {
-                $("#index").load("contact_us.html");
-            });
 
-            // mobile menu
-            $(".m-home").on("click", function () {
-                $("#index").load("home.html");
+
+        <script>
+            $(document).ready(function () {
+
+                $("#index").load("home.html")
+                // desktop menu
+                $(".puppies").on("click", function () {
+                    $("#index").load("puppies.html");
+                });
+                $(".contact-us").on("click", function () {
+                    $("#index").load("contact_us.html");
+                });
+
+                // mobile menu
+                $(".m-home").on("click", function () {
+                    $("#index").load("home.html");
+                });
+                $(".m-puppies").on("click", function () {
+                    $("#index").load("puppies.html");
+                });
+                $(".m-contact-us").on("click", function () {
+                    $("#index").load("contact_us.html");
+                });
+                $(".m-sample").on("click", function () {
+                    $("#index").load("puppy_details_kai.html");
+                });
+
             });
-            $(".m-puppies").on("click", function () {
-                $("#index").load("puppies.html");
-            });
-            $(".m-contact-us").on("click", function () {
-                $("#index").load("contact_us.html");
-            });
-        });
-    </script>
-</body>
+        </script>
+    </body>
+
 </html>

@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
 
 
@@ -34,7 +36,7 @@ $(document).ready(function () {
             // });
         }
         // reset mobile menu (hamburger menu) once clicked.
-        $(".m-home, .m-puppies, .m-contact-us").on("click", function () {
+        $(".m-home, .m-puppies, .m-contact-us, .m-sample").on("click", function () {
             hamburgerMenu = true;
             $("#hmbrgr-menu-btn").html(
                 "<i class='fa-solid fa-bars'></i>"
@@ -47,6 +49,7 @@ $(document).ready(function () {
 
         });
     });
+
     // END Hamburger Menu
 
     // API, get puppie details
@@ -146,17 +149,11 @@ $(document).ready(function () {
 
 
     })
-    $('#lightSlider').lightSlider({
-        gallery: true,
-        item: 1,
-        loop: true,
-        slideMargin: 0,
-        thumbItem: 9,
-        slideMove: 2,
-    });
+
 
 
 })
+
 
 
 

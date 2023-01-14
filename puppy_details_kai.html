@@ -15,63 +15,18 @@
     <link rel="stylesheet" href="/stylesheets/lightslider.css">
     <link rel="stylesheet" href="/stylesheets/footer.css">
     <!-- Javascript -->
-    <script src="/javascript/lightslider.js" defer></script>
+
     <script src="/javascript/javascript.js" defer></script>
+    <script src="/javascript/lightslider.js" defer></script>
 
     <title></title>
 </head>
 
 
 <body>
-    <!-- <header>
-        <div id="header-box">
 
-            <div id="header-logo">
-                <a href="/home.html">
-                    <img src="/media/Broke Not Broken-03 (2).jpg" alt="BNB Logo">
-                </a>
-            </div>
-            <div id="header-name">
-                <h1 style="margin: auto;">BNB DOOLES</h1>
-            </div>
-            <button id="hmbrgr-menu-btn" class="material-symbols-outlined">MENU</button>
-            
-        </div>
 
-        <div id="header-menu">
-            
-
-            <ul id="nav-menu">
-                <li>
-                    <a href="/home.html">
-                        <button id="nav-btn">HOME</button>
-                    </a>
-
-                </li>
-                <li>
-                    <a href="/puppies.html">
-                        <button id="nav-btn">PUPPIES</button>
-                    </a>
-                </li>
-                <li>
-                    <a href="/contact_us.html">
-                        <button id="nav-btn">CONTACT US</button>
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-    </header>
     <div id="container">
-        <div class="new-mobile-menu">
-            <a href="/home.html">Home</a>
-            <hr>
-            <a href="/puppies.html">Puppies</a>
-            <hr>
-            <a href="/contact_us.html">Contact Us</a>
-            <hr>
-        </div> -->
-
         <h1 id="name"></h1>
         <div id="details">
             <div class="demo">
@@ -130,10 +85,10 @@
             </div>
 
         </div>
-        
+
 
     </div>
-    
+
 
     <div id="footer">
         <div id="reach-us">
@@ -144,16 +99,26 @@
             <br>
             <i class="fa-solid fa-clock">&nbsp;&nbsp;&nbsp;&nbsp;Mon-Fri (8Am - 6PM)</i>
             <br>
-            <a target="_blank" href="https://www.instagram.com/brokenotbroken2022/?igshid=Zjc2ZTc4Nzk%3D"><i class="fa-brands fa-square-instagram">&nbsp;&nbsp;&nbsp;&nbsp;Follow Us</i></a>
+            <a target="_blank" href="https://www.instagram.com/brokenotbroken2022/?igshid=Zjc2ZTc4Nzk%3D"><i
+                    class="fa-brands fa-square-instagram">&nbsp;&nbsp;&nbsp;&nbsp;Follow Us</i></a>
             <br>
             <i class="fa-solid fa-location-dot">&nbsp;&nbsp;&nbsp;&nbsp;Longwood, FL</i>
+            <div id="co-info">
+                <p>BROKE NOT BROKEN LLC</p>
+            </div>
         </div>
-
-        <div id="co-info">
-            <p>BROKE NOT BROKEN LLC</p>
-        </div>
-
     </div>
+    <script>
+        // load light slider
+        $('#lightSlider').lightSlider({
+            gallery: true,
+            item: 1,
+            loop: true,
+            slideMargin: 0,
+            thumbItem: 9,
+            slideMove: 2,
+        });
+    </script>
 
 </body>
 
