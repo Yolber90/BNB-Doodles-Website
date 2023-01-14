@@ -64,6 +64,9 @@
     <script>
         $(document).ready(function () {
             // desktop menu
+            $(".home").on("click", function () {
+                $("#index").load("home.html");
+            });
             $(".puppies").on("click", function () {
                 $("#index").load("puppies.html");
             });
