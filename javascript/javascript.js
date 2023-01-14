@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+
+
     // START Hamburger Menu
     let hamburgerMenu = true;
 
