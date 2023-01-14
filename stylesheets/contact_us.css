@@ -6,10 +6,7 @@
     font-weight: 100 700;
     src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v75/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2) format('woff2');
 }
-/* !Contact Us */
-/* .new-mobile-menu{
-    display: none;
-} */
+
 .cu-header, .cu-sub-head{
     font-family: 'Varela Round', sans-serif;
     margin: auto;
@@ -24,8 +21,8 @@
 
 }
 
-hr{
-    width: 40%;
+#contact-us-container > hr{
+    width: 50%;
 }
 
 .form-input{
@@ -39,7 +36,10 @@ input{
     border-radius: 5px;
     height: 25px;
     border: 1px solid lightblue;
-    
+}
+
+input:focus{
+    outline: 1px solid lightblue;
 }
 
 textarea{
@@ -57,18 +57,12 @@ textarea:focus{
     font-size: 18px;
     margin-top: 20px;
 }
-/* !Contact Us */
-
-
-
 
 body{
     background-color: #F8F6F3;;
     display: flex;
     flex-direction: column;
     margin: 0px;
-   
-    
 }
 
 /* *Header */
@@ -101,7 +95,6 @@ header{
     width: auto;
     margin: auto;
     margin-left: 5px;
-    /* font-family: 'Pacifico', cursive; */
     font-family: 'Varela Round', sans-serif;
     font-size: 32px;
     text-align: center;
@@ -143,41 +136,7 @@ li{
     cursor: pointer;
 }
 
-/* .material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
-}
 
-.material-symbols-outlined {
-    font-family: 'Material Symbols Outlined';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    width: 80px;
-    height: 10px;
-    border: none;
-    background-color: rgba(31, 31, 163, 0);
-    cursor: pointer;
-    display: none;
-    -webkit-font-smoothing: antialiased;
-} */
-/* *END    Header */ 
-
-/* *Start Body */
-
-/* .mobile-menu-container {
-    display: none;
-} */
 
 #container{
     width: 60%;
@@ -290,27 +249,9 @@ li{
         width: 90%;
         display: flex;
         flex-direction: column;
-        margin: 50px auto;
-
+        margin: 35px auto;
     }
 
-    
-    .new-mobile-menu > a{
-        font-size: 20px;
-        text-decoration: none;
-        color: aliceblue;
-        margin-top: 40px;
-        margin-left: 10px;
-        margin-bottom: 10px;
-        position:static;        
-    }
-    .new-mobile-menu > hr{
-        border: 1px solid rgb(54, 53, 53);
-        border-radius: 5px;
-        width: 40%;
-        margin-left: 10px;
-        
-    } */
     #reach-us{
         width: auto;
         margin: auto;
@@ -360,8 +301,6 @@ li{
         display: flex;
         flex-direction: column;
         position:relative;
-        /* display: none; ! Maybe use this option when mobile menu drops*/
-        
     }
 
     #contact-us-container{
