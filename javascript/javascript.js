@@ -17,10 +17,7 @@ $(document).ready(function () {
                 "width": "0%",
                 "height": "0%"
             });
-            // $('body').css({
-            //     overflow: 'auto',
-            //     // height: 'auto'
-            // });
+
             
         }else{
             $("#hmbrgr-menu-btn").html(
@@ -47,10 +44,7 @@ $(document).ready(function () {
                 "width": "0%",
                 "height": "0%"
             });
-            // $('body').css({
-            //     overflow: 'auto',
-            //     height: 'auto'
-            // });
+
         });
     });
     // END Hamburger Menu
