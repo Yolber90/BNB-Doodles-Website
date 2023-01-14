@@ -132,7 +132,7 @@ li{
     position: absolute;
     display: flex;
     flex-direction: column;
-    bottom: 0px;
+    bottom: 10px;
     
     /* Text Decoration */
 }
@@ -197,7 +197,7 @@ li{
     
     #posting{
         width: 80%;
-        height: auto;
+        height: 280px;
         background-color: rgb(122, 122, 122);
         margin: 15px auto 15px auto;
         display: flex;
