@@ -64,11 +64,15 @@
 
         <script>
             $(document).ready(function () {
+                // Menu button functions
+
+                // Default home screen on open
                 $("#index").load("home.html")
                 $("#pups").load("puppies.html")
                 // desktop menu
                 $(".home").on("click", function () {
                     $("#index").load("home.html")
+                    $("#pups").css("display", "")
                     $("#pups").load("puppies.html")
                 })
                 $(".puppies").on("click", function () {
@@ -83,6 +87,7 @@
                 // mobile menu
                 $(".m-home").on("click", function () {
                     $("#index").load("home.html");
+                    $("#pups").css("display", "")
                     $("#pups").load("puppies.html");
                 });
                 $(".m-puppies").on("click", function () {
