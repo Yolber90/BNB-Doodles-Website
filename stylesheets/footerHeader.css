@@ -1,3 +1,4 @@
+/* HEADER */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
@@ -210,4 +211,98 @@ header {
         display: none;
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+#footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(211, 211, 211);
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+#footer-img{
+    width: 80px;
+    height: auto;
+    position: relative;
+    left: 30%;    
+    /* box-shadow: 1px 1px 5px black, -1px -1px 5px white ; */
+}
+
+#co-info{
+    height: auto;
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+#reach-us{
+    width: auto;
+    height: auto;
+    margin: auto;
+    color: rgb(14, 13, 13);
+    /* text-shadow: 2px 2px 4px white, -2px -2px 4px white; */
+    
+}
+#reach-us > img{
+    display:inline;
+    max-width: 100%;
+    
+}
+
+#reach-us > i{
+    text-align: center;
+    margin: auto;
+    
+}
+#reach-us > a{
+    text-decoration: none;
+    color: rgb(14, 13, 13);
+    /* text-shadow: 2px 2px 4px white, -2px -2px 4px white;     */
+}
+#reach-us > hr{
+    width: 100%;
+    border-top: 1px solid rgb(151, 149, 149);
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    #reach-us > a, i{
+        font-size: 13px;
+        margin: auto;
+    }
+    #co-info{
+        font-size: 10px;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media screen and (max-width: 1650px) and (min-width: 601px) {
+    #reach-us > a, i{
+        font-size: 15px;
+    }
+    #co-info{
+        font-size: 14px;
+        
+    }
 }

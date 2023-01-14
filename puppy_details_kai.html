@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/stylesheets/puppy_details.css">
     <link rel="stylesheet" href="/stylesheets/lightslider.css">
-    <link rel="stylesheet" href="/stylesheets/footer.css">
+    <link rel="stylesheet" href="/stylesheets/footerHeader.css">
     <!-- Javascript -->
 
     <script src="/javascript/javascript.js" defer></script>
@@ -27,7 +27,7 @@
 
 
     <div id="container">
-        <h1 id="name"></h1>
+        <h1 id="name"></h1>     
         <div id="details">
             <div class="demo">
                 <ul id="lightSlider">
@@ -115,6 +115,9 @@
             thumbItem: 9,
             slideMove: 2,
         });
+        $('img').on("click", function(){
+            $(this).width(10000)
+        });  
     </script>
 
 </body>
