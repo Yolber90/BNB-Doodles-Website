@@ -40,7 +40,7 @@
 
             <div id="header-menu">
                 <div id="buttons">
-                    <button id="nav-btn" class="home">HOME</button>
+                    <button id="nav-btn" class="home"><a href="contact_us.html">HOME</a></button>
                     <button id="nav-btn" class="puppies">PUPPIES</button>
                     <button id="nav-btn" class="contact-us">CONTACT US</button>
                 </div>
@@ -48,7 +48,7 @@
 
         </header>
         <div class="new-mobile-menu">
-            <a class="m-home">Home</a>
+            <a class="m-home"><a href="contact_us.html">HOME</a></a>
             <hr>
             <a class="m-puppies">Puppies</a>
             <hr>
@@ -70,11 +70,11 @@
                 $("#index").load("home.html")
                 $("#pups").load("puppies.html")
                 // desktop menu
-                $(".home").on("click", function () {
-                    $("#index").load("home.html")
-                    $("#pups").css("display", "")
-                    $("#pups").load("puppies.html")
-                })
+                // $(".home").on("click", function () {
+                //     $("#index").load("home.html")
+                //     $("#pups").css("display", "")
+                //     $("#pups").load("puppies.html")
+                // })
                 $(".puppies").on("click", function () {
                     $("#index").load("puppies.html");
                     $("#pups").css("display", "none")
@@ -85,11 +85,11 @@
                 });
 
                 // mobile menu
-                $(".m-home").on("click", function () {
-                    $("#index").load("home.html");
-                    $("#pups").css("display", "")
-                    $("#pups").load("puppies.html");
-                });
+                // $(".m-home").on("click", function () {
+                //     $("#index").load("home.html");
+                //     $("#pups").css("display", "")
+                //     $("#pups").load("puppies.html");
+                // });
                 $(".m-puppies").on("click", function () {
                     $("#index").load("puppies.html");
                     $("#pups").css("display", "none")
