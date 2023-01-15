@@ -30,6 +30,7 @@ $(document).ready(function () {
                 "width": '70%',
                 "height": "100%" 
             });
+            // This locks scroll when the menu is open, was buggy so had to comment out.
             // $('body').css({
             //     overflow: 'hidden',
             //     height: '100%'   
@@ -51,6 +52,8 @@ $(document).ready(function () {
     });
 
     // END Hamburger Menu
+
+
 
     // API, get puppie details
     $.get("/json/database", function (data) {
@@ -120,7 +123,9 @@ $(document).ready(function () {
         )
         $("#contact-us").html("Reserve " + name);
 
+
         // from Puppies.html
+        // Load Puppy details on puppies.html under 'listing' div
         let dogs = []
         for (const key in pups) {
             dogs.push(key);
@@ -153,39 +158,3 @@ $(document).ready(function () {
 
 
 })
-
-
-
-
-
-
-
-
-// $(document).ready(function () {
-//     //Ligth Slider plugin
-//     let hamburgerMenu = true;
-//     $(".mobile-menu").css("display", "none")
-//     $(".mobile-menu-container").css("display", "none");
-    
-    
-
-//     $("#hmbrgr-menu-btn").on("click", function () {
-//         hamburgerMenu = !hamburgerMenu;
-
-//         if(hamburgerMenu == true){
-//             $(".material-symbols-outlined").html("menu");
-//             $(".mobile-menu").css("display", "none")
-//             $(".mobile-menu-container").css("display", "none");
-            
-//         }
-//         else{
-//             $(".material-symbols-outlined").html("close");
-//             $(".mobile-menu").css("display", "")
-//             $(".mobile-menu-container").css("display", "");
-//             $(".mobile-menu").css("display", "1")
-//             $(".mobile-menu-container").css("z-index", "1");
-            
-            
-//         }
-//     });
-// })
