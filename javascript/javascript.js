@@ -99,7 +99,7 @@ $(document).ready(function () {
 
 
         //Dinamic HTML Load, will load into the table elements
-        $("title").append("BNB Doodles | " + name);
+        $("#puppy-title").append("BNB Doodles | " + name);
         $("#name").html(name);
         $("#sex").html(sex);
         $("#coat").html(coat);
