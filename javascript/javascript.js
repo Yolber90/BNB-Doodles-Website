@@ -116,12 +116,14 @@ $(document).ready(function () {
             $("#status").html("On Hold");
             $("#status").css("color", "red");
         }
-        // Notice 
+        
         $("#about").html(
             "<p> Contact us to inquire about " + name + ".</p>" +
             "<p>A minimum down payment of $200 will be required to hold this puppy for you.</p>"
         )
-        $("#contact-us").html("Reserve " + name);
+        
+        // This updates the reserve button on the puppy details page
+        $(".dog-submit").text("    Reserve " + name).css("color", "black");
 
 
         // from Puppies.html
