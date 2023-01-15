@@ -77,8 +77,16 @@ header {
     margin: auto;
     width: auto;
 }
+
+#header-menu > a{
+    color: wheat;
+}
+
 a:link, a:visited, a:hover, a:active{
     text-decoration: none;
+    color: rgb(0, 25, 39);
+    font-weight: 800;
+    font-family: 'Varela Round', sans-serif;;
 
 }
 
@@ -302,10 +310,15 @@ a:link, a:visited, a:hover, a:active{
     }
 }
 
-@media screen and (max-width: 1731px) and (min-width: 1651px) {
+@media screen and (max-width: 1780px) and (min-width: 1651px) {
     #header-name{
         font-size: 27px;
     }
+    /* #header-logo {
+        height: auto;
+        width: 85px;
+
+    } */
 }
 
 
