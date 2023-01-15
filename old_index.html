@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Jquery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/ab9a9d34df.js" crossorigin="anonymous"></script>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/stylesheets/footerHeader.css">
+
+    <!-- javascript -->
+    <script src="/javascript/lightslider.js" defer></script>
+    <script src="/javascript/javascript.js" defer></script>
+
+    <title>BNB Doodles | Home</title>
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <div id="header-box">
+                <div id="header-logo">
+                    <a href="/home.html">
+                        <img id="logo" src="/media/Broke Not Broken-03 (2).jpg" alt="BNB Logo">
+                    </a>
+                </div>
+                <div id="header-name">
+                    <h1 id="co-name">BNB DOOLES</h1>
+                </div>
+                <button id="hmbrgr-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="header-menu">
+                <div id="buttons">
+                    <button id="nav-btn" class="home"><a href="contact_us.html">HOME</a></button>
+                    <button id="nav-btn" class="puppies">PUPPIES</button>
+                    <button id="nav-btn" class="contact-us">CONTACT US</button>
+                </div>
+            </div>
+
+        </header>
+        <div class="new-mobile-menu">
+            <a class="m-home"><a href="contact_us.html">HOME</a></a>
+            <hr>
+            <a class="m-puppies">Puppies</a>
+            <hr>
+            <a class="m-contact-us">Contact Us</a>
+            <hr>
+            <a class="m-sample">puppy page sample</a>
+        </div>
+
+
+        <div id="index"></div><!--Load jquery here-->
+        <div id="pups"></div><!--If home screen, load puppies here-->
+
+
+        <script>
+            $(document).ready(function () {
+                // Menu button functions
+
+                // Default home screen on open
+                $("#index").load("home.html")
+                $("#pups").load("puppies.html")
+                // desktop menu
+                $(".home").on("click", function () {
+                    $("#index").load("home.html")
+                    $("#pups").css("display", "")
+                    $("#pups").load("puppies.html")
+                })
+                $(".puppies").on("click", function () {
+                    $("#index").load("puppies.html");
+                    $("#pups").css("display", "none")
+                });
+                $(".contact-us").on("click", function () {
+                    $("#index").load("contact_us.html");
+                    $("#pups").css("display", "none")
+                });
+
+                // mobile menu
+                $(".m-home").on("click", function () {
+                    $("#index").load("home.html");
+                    $("#pups").css("display", "")
+                    $("#pups").load("puppies.html");
+                });
+                $(".m-puppies").on("click", function () {
+                    $("#index").load("puppies.html");
+                    $("#pups").css("display", "none")
+                });
+                $(".m-contact-us").on("click", function () {
+                    $("#index").load("contact_us.html");
+                    $("#pups").css("display", "none")
+                });
+                $(".m-sample").on("click", function () {
+                    $("#index").load("puppy_details_kai.html");
+                    $("#pups").css("display", "none")
+                });
+            })
+        </script>
+    </body>
+
+</html>
