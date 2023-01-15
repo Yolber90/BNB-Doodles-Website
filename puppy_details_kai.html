@@ -10,22 +10,57 @@
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/ab9a9d34df.js" crossorigin="anonymous"></script>
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/stylesheets/puppy_details.css">
-    <link rel="stylesheet" href="/stylesheets/lightslider.css">
+    <!-- <link rel="stylesheet" href="/stylesheets/lightslider.css"> -->
     <link rel="stylesheet" href="/stylesheets/footerHeader.css">
     <!-- Javascript -->
 
     <script src="/javascript/javascript.js" defer></script>
+
     <script src="/javascript/lightslider.js" defer></script>
 
-    <title></title>
+    <title>BNB Doodles | Kai</title>
 </head>
+<header>
+    <div id="header-box">
+        <div id="header-logo">
+            <a href="/home.html">
+                <img id="logo" src="/media/Broke Not Broken-03 (2).jpg" alt="BNB Logo">
+            </a>
+        </div>
+        <div id="header-name">
+            <h1 id="co-name">BNB DOOLES</h1>
+        </div>
+        <!-- Hamburger Menu -->
+        <button id="hmbrgr-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    <!-- Header Menu -->
+    <div id="header-menu">
+        <div id="buttons">
+            <button id="nav-btn" class="home"><a href="home.html">HOME</a></button>
+            <button id="nav-btn" class="puppies"><a href="puppies.html">PUPPIES</a></button>
+            <button id="nav-btn" class="contact-us"><a href="contact_us.html">CONTACT US</a></button>
+        </div>
+    </div>
+
+</header>
+<!-- Mobile Menu -->
+<div class="new-mobile-menu">
+    <a class="m-home" href="home.html">HOME</a>
+    <hr>
+    <a class="m-puppies" href="puppies.html">Puppies</a>
+    <hr>
+    <a class="m-contact-us" href="contact_us.html">Contact Us</a>
+    <hr>
+    <a class="m-sample" href="puppy_details_kai.html">puppy page sample</a>
+</div>
 
 
 <body>
     <div id="details-container">
-        <h1 id="name"></h1>     
+        <h1 id="name"></h1>
         <div id="details">
             <div class="demo">
                 <ul id="lightSlider">
@@ -103,20 +138,21 @@
             </div>
         </div>
     </div>
-    <script>
+    <script type="text/javascript" defer>
         // load light slider
-        $('#lightSlider').lightSlider({
-            gallery: true,
-            item: 1,
-            loop: true,
-            slideMargin: 0,
-            thumbItem: 9,
-            slideMove: 2,
+        $(document).ready(function () {
+            $('#lightSlider').lightSlider({
+                gallery: true,
+                item: 1,
+                loop: true,
+                slideMargin: 0,
+                thumbItem: 9,
+                slideMove: 2,
+            });
+
         });
-        $('img').on("click", function(){
-            $(this).width(10000)
-        });  
     </script>
+
 
 </body>
 

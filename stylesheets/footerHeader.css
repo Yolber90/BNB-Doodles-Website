@@ -77,6 +77,13 @@ header {
     margin: auto;
     width: auto;
 }
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+
+}
+
+
+
 
 #nav-btn {
     border-radius: 6px;

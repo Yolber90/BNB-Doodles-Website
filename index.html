@@ -17,7 +17,7 @@
     <script src="/javascript/lightslider.js" defer></script>
     <script src="/javascript/javascript.js" defer></script>
 
-    <title>BNB Doodles</title>
+    <title>BNB Doodles | Home</title>
 </head>
 
 <body>
@@ -70,11 +70,11 @@
                 $("#index").load("home.html")
                 $("#pups").load("puppies.html")
                 // desktop menu
-                // $(".home").on("click", function () {
-                //     $("#index").load("home.html")
-                //     $("#pups").css("display", "")
-                //     $("#pups").load("puppies.html")
-                // })
+                $(".home").on("click", function () {
+                    $("#index").load("home.html")
+                    $("#pups").css("display", "")
+                    $("#pups").load("puppies.html")
+                })
                 $(".puppies").on("click", function () {
                     $("#index").load("puppies.html");
                     $("#pups").css("display", "none")
@@ -85,11 +85,11 @@
                 });
 
                 // mobile menu
-                // $(".m-home").on("click", function () {
-                //     $("#index").load("home.html");
-                //     $("#pups").css("display", "")
-                //     $("#pups").load("puppies.html");
-                // });
+                $(".m-home").on("click", function () {
+                    $("#index").load("home.html");
+                    $("#pups").css("display", "")
+                    $("#pups").load("puppies.html");
+                });
                 $(".m-puppies").on("click", function () {
                     $("#index").load("puppies.html");
                     $("#pups").css("display", "none")

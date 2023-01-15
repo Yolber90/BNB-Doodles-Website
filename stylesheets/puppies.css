@@ -160,8 +160,6 @@ hr{
         flex-direction: column;
     }
 
-
-
     #container-header{
         text-align: center;
         font-size: 29px;
@@ -207,34 +205,7 @@ hr{
     body{
         background-color: rgb(227, 241, 241);
     }
-    header {
-        width: 100%;
-        height: auto;
-    }
 
-    #header-box {
-        width: 100%;
-        height: 100px;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-    }
-
-    #header-logo {
-        height: auto;
-        width: 100px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        overflow: visible;
-        margin-right: 0px;
-    }
-
-    #header-name {
-        font-size: 30px;
-        margin-top: 15px;
-        color: black;
-        font-family: 'Varela Round', sans-serif;
-    }
     #container{
         min-width: 100%;
         height: auto;
@@ -242,15 +213,11 @@ hr{
         margin: 0px auto;
         display: flex;
         flex-direction: column;
-        position:relative;
-        
-        /* display: none; ! Maybe use this option when mobile menu drops*/
-        
+        position:relative;        
     }
     #listing{
         width: 80%;    
         height: auto;
-        /* background-color: lightgreen; */
         margin: auto;
         display: flex;
         flex-direction: row;
@@ -260,7 +227,6 @@ hr{
         margin: 10px auto 10px auto;
     };
     
-
     #information {
         width: 100%;
         height: auto;
@@ -268,7 +234,6 @@ hr{
         background-color: aliceblue;
         display: flex;
         flex-direction: column;
-        
     }
 
     #details {
@@ -276,7 +241,6 @@ hr{
         height: auto;
         display: flex;
         flex-direction: column;
-
     }
 
     th {
