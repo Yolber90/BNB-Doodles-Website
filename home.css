@@ -20,7 +20,7 @@
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 845px) {
     #home-title{
         font-size: 55px;
         width: auto;
@@ -39,7 +39,7 @@
 
 
 
-@media screen and (max-width: 1650px) and (min-width: 601px) {
+@media screen and (max-width: 1650px) and (min-width: 846px) {
     #home-title{
         font-size: 65px;
         width: auto;

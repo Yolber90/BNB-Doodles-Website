@@ -113,7 +113,7 @@ a:link, a:visited, a:hover, a:active{
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 845px) {
     header {
     height: 70px;
     position: fixed;
@@ -194,7 +194,7 @@ a:link, a:visited, a:hover, a:active{
 }
 
 
-@media screen and (max-width: 1650px) and (min-width: 601px) {
+@media screen and (max-width: 1650px) and (min-width: 846px) {
     header {
         width: 100%;
     }
@@ -300,7 +300,7 @@ a:link, a:visited, a:hover, a:active{
 
 }
 
-@media screen and (max-width: 1650px) and (min-width: 601px) {
+@media screen and (max-width: 1650px) and (min-width: 846px) {
     #reach-us > a, i{
         font-size: 15px;
     }

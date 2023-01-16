@@ -60,11 +60,23 @@ $(document).ready(function () {
         //Get and Format json file from a string to an object
         const objData = JSON.parse(data); //convert data into an obj
         const pups = objData.puppies //short cont for for data.puppies
-        const dataLen = Object.keys(pups).length // get the obj length
+        const databaseKeys  = Object.keys(pups) // get the obj length
 
 
         //Save data from the json file into variables for future consumption.
-        const thisPup = pups.kai; // pups.(pup object key)
+        let getTitleClass = $("#puppy-title").attr('class');
+        let thisPup = '';
+
+        // This looks to see if the page open is the puppies listing or a specific puppy details.
+        if(getTitleClass !== undefined){ // if it gets a class returned eg. (not undefined), it will set this puppy to the class name imbeded in the <title>
+            let thisPupIndex = databaseKeys[databaseKeys.indexOf(getTitleClass)]; // get the index of the class name from the object.keys
+        // Get the object details in 'thisPupIndex' within the database eg. 'pups'
+            thisPup = pups[thisPupIndex] // set this pup to the name assigned to the index in the object
+        }else{ // if it's not a puppy details page (meaning it's the puppies.html page)
+            thisPup = pups.kai; // just set it to any of the object keys, does not matter, just needs to return a value and not 'undefined'
+        }
+
+        // Set the these variables per the object keys values.
         const name = thisPup.name;
         const coat = thisPup.coat;
         const sex = thisPup.sex.toUpperCase();
