@@ -1,9 +1,4 @@
-
-
 $(document).ready(function () {
-
-
-
     // START Hamburger Menu
     let hamburgerMenu = true;
 
@@ -53,9 +48,7 @@ $(document).ready(function () {
 
     // END Hamburger Menu
 
-
-
-    // API, get puppie details
+    // API, get/populate puppie details
     $.get("/json/database", function (data) {
         //Get and Format json file from a string to an object
         const objData = JSON.parse(data); //convert data into an obj
@@ -84,7 +77,6 @@ $(document).ready(function () {
         const price = thisPup.price;
         const status = thisPup.available;
 
-
         //Time Calculations
         //Get CPU Date and calculate against puppy DOB
         const today = new Date();// establish CPU Date
@@ -92,7 +84,6 @@ $(document).ready(function () {
         const daySince = today.getTime() - born.getTime()// Find difference between CPU Date and inception date
         const diff = daySince / (1000 * 3600 * 24);// Convert into Days.
         const finalDiff = Math.round(diff);// Round the diff
-
 
         //Convert Days into days weeks, months, or years
         function howOld(days) {
@@ -107,8 +98,6 @@ $(document).ready(function () {
                 return days + " Days Old"
             };
         };
-
-
 
         //Dinamic HTML Load, will load into the table elements
         $("#puppy-title").append("BNB Doodles | " + name);
@@ -137,7 +126,6 @@ $(document).ready(function () {
         // This updates the reserve button on the puppy details page
         $(".dog-submit").text("    Reserve " + name).css("color", "black");
 
-
         // from Puppies.html
         // Load Puppy details on puppies.html under 'listing' div
         let dogs = []
@@ -152,7 +140,6 @@ $(document).ready(function () {
                 // pups[dogs[i]].thumbnail
                 // "<a href='bnb_doodles_puppies_details_kai.html' target='_blank'>" + pups[dogs[i]].thumbnail  + "</a>"
                 "<a  href='puppy_details_" + pups[dogs[i]].name + ".html' target='_blank'>" + pups[dogs[i]].thumbnail + "</a>"
-
             )
             $(".img" + [i]).append(
                 "<div id='info' class=info" + [i] + ">" +
@@ -166,9 +153,6 @@ $(document).ready(function () {
             )
         }
 
-
     })
-
-
 
 })
