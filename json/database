@@ -10,9 +10,9 @@
       "available": false,
       "price": 1200
     },
-    "buelo": {
-      "name": "Buelo",
-      "coat": "Black",
+    "walter": {
+      "name": "Walter",
+      "coat": "Red",
       "sex": "male",
       "DOB": "01/01/2023",  
       "thumbnail": "<img id='list-img' src='/media/buelo.jpg'>",
