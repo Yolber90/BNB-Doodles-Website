@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" href="/media/Broke Not Broken-03 (2).jpg">
+    <!-- Jquery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/ab9a9d34df.js" crossorigin="anonymous"></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/stylesheets/puppy_details.css">
+    <!-- <link rel="stylesheet" href="/stylesheets/lightslider.css"> -->
+    <link rel="stylesheet" href="/stylesheets/footerHeader.css">
+    <!-- Javascript -->
+
+    <script src="/javascript/javascript.js" defer></script>
+
+    <script src="/javascript/lightslider.js" defer></script>
+    <!-- Title is populated with jquery -->
+    <title id="puppy-title" class="buelo"></title>
+</head>
+<header>
+    <div id="header-box">
+        <div id="header-logo">
+            <a href="/home.html">
+                <img id="logo" src="/media/Broke Not Broken-03 (2).jpg" alt="BNB Logo">
+            </a>
+        </div>
+        <div id="header-name">
+            <h1 id="co-name">BNB DOOLES</h1>
+        </div>
+        <!-- Hamburger Menu -->
+        <button id="hmbrgr-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    <!-- Header Menu -->
+    <div id="header-menu">
+        <div id="buttons">
+            <button id="nav-btn" class="home"><a href="index.html">HOME</a></button>
+            <button id="nav-btn" class="puppies"><a href="puppies.html">PUPPIES</a></button>
+            <button id="nav-btn" class="contact-us"><a href="contact_us.html">CONTACT US</a></button>
+        </div>
+    </div>
+
+</header>
+<!-- Mobile Menu -->
+<div class="new-mobile-menu">
+    <a class="m-home" href="index.html">HOME</a>
+    <hr>
+    <a class="m-puppies" href="puppies.html">Puppies</a>
+    <hr>
+    <a class="m-contact-us" href="contact_us.html">Contact Us</a>
+    <hr>
+    
+</div>
+
+
+<body>
+    <div id="details-container">
+        <h1 id="name"></h1>
+        <div id="details">
+            <div class="demo">
+                <ul id="lightSlider">
+                    <li data-thumb="media\kai\IMG_3534.jpg">
+                        <img src="media\kai\IMG_3534.jpg" />
+                    </li>
+                    <li data-thumb="media\kai\kai.jpg">
+                        <img src="media\kai\kai.jpg" />
+                    </li>
+                    <li data-thumb="media\kai\kai2.JPG">
+                        <img src="media\kai\kai2.JPG" />
+                    </li>
+                </ul>
+            </div>
+
+            <div id="information">
+
+                <table>
+                    <th>Gender</th>
+                    <td id="sex"></td>
+                </table>
+                <table>
+                    <th>Color</th>
+                    <td id="coat"></td>
+                </table>
+                <table>
+                    <th id="th">Born On</th>
+                    <td id="bornOn"></td>
+                </table>
+                <table>
+                    <th id="th">Age</th>
+                    <td id="time"></td>
+                </table>
+                <table>
+                    <th>Status</th>
+                    <td id="status"></td>
+                </table>
+                <table>
+                    <th>Price</th>
+                    <td id="price"></td>
+                </table>
+
+                <div id="payment-div">
+                    <h4>Reserve this Puppy</h4>
+                    <div id="notice">
+                        <p id="about"></p>
+                        <a href="/contact_us.html">
+                            
+                            <button id="contact-us" class="contact-us-btn"><i class="dog-submit fa-solid fa-dog"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div id="footer">
+        <div id="reach-us">
+            <img id="footer-img" src="/media/Broke Not Broken-03 (2).jpg" alt="" srcset="">
+            <br>
+            <hr>
+            <a href="tel:321-961-5100"><i class="fa-solid fa-phone">&nbsp;&nbsp;&nbsp;&nbsp;(321) 961-5100</i></a>
+            <br>
+            <i class="fa-solid fa-clock">&nbsp;&nbsp;&nbsp;&nbsp;Mon-Fri (8Am - 6PM)</i>
+            <br>
+            <a target="_blank" href="https://www.instagram.com/brokenotbroken2022/?igshid=Zjc2ZTc4Nzk%3D"><i
+                    class="fa-brands fa-square-instagram">&nbsp;&nbsp;&nbsp;&nbsp;Follow Us</i></a>
+            <br>
+            <i class="fa-solid fa-location-dot">&nbsp;&nbsp;&nbsp;&nbsp;Longwood, FL</i>
+            <div id="co-info">
+                <p>BROKE NOT BROKEN LLC</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" defer>
+        // load light slider
+        $(document).ready(function () {
+            $('#lightSlider').lightSlider({
+                gallery: true,
+                item: 1,
+                loop: true,
+                slideMargin: 0,
+                thumbItem: 9,
+                slideMove: 2,
+            });
+
+        });
+    </script>
+
+
+</body>
+
+</html>
