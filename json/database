@@ -45,6 +45,15 @@
       "thumbnail": "<img id='list-img' src='/media/husky.JPG'>",
       "available": true,
       "price": 1200
+    },
+    "gatsby": {
+      "name": "Gatsby",
+      "coat": "orange/white",
+      "sex": "female",
+      "DOB": "01/01/2023",
+      "thumbnail": "<img id='list-img' src='/media/gatsby.jpg'>",
+      "available": true,
+      "price": 1200
     }
   }
 }
